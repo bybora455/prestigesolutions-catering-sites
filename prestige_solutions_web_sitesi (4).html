@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prestige Solutions | Kurumsal Ofis Catering & Yemek Hizmetleri</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#C5A880',
+              goldLight: '#DFCA9B',
+              goldDark: '#9E7D53',
+              navyDark: '#0A111F',
+              navyCard: '#131F35',
+              navyLight: '#1C2C4A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0A111F;
+      color: #E2E8F0;
+    }
+    .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #DFCA9B 0%, #C5A880 50%, #9E7D53 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-glow {
+      box-shadow: 0 0 25px rgba(197, 168, 128, 0.25);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#0A111F] text-slate-200 antialiased selection:bg-[#C5A880] selection:text-slate-950 min-h-screen">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#0A111F]/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Marka Logosu -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#DFCA9B] to-[#9E7D53] flex items-center justify-center font-heading font-extrabold text-slate-950 text-xl shadow-lg shadow-[#C5A880]/20 group-hover:scale-105 transition-transform">
+          PS
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-extrabold text-lg sm:text-xl tracking-wider text-white">PRESTIGE</span>
+          <span class="text-[10px] tracking-[0.28em] text-[#C5A880] font-bold">SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menü Linkleri -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#avantajlar" class="hover:text-[#C5A880] transition-colors">Avantajlar</a>
+        <a href="#menu" class="hover:text-[#C5A880] transition-colors">Haftalık Menü</a>
+        <a href="#hesaplayici" class="hover:text-[#C5A880] transition-colors">Bütçe Hesapla</a>
+        <a href="#nasil-calisir" class="hover:text-[#C5A880] transition-colors">Süreç</a>
+        <a href="#sss" class="hover:text-[#C5A880] transition-colors">S.S.S.</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/905385617199?text=Merhaba%2C%20Prestige%20Solutions%20kurumsal%20ofis%20yemek%20hizmetiniz%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-lg shadow-emerald-950/40 transition-all hover:scale-105">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>WhatsApp Hattı</span>
+        </a>
+
+        <a href="#teklif" class="bg-gradient-to-r from-[#DFCA9B] via-[#C5A880] to-[#9E7D53] hover:brightness-110 text-slate-950 font-extrabold text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-xl shadow-lg shadow-[#C5A880]/20 transition-all hover:scale-105 active:scale-95">
+          Teklif Alın
+        </a>
+
+        <!-- Mobil Menü Butonu -->
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white" aria-label="Menü">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobil Açılır Menü -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0D1629] border-b border-slate-800 px-6 py-5 space-y-4">
+      <a href="#avantajlar" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-[#C5A880] font-medium text-sm">Avantajlar</a>
+      <a href="#menu" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-[#C5A880] font-medium text-sm">Haftalık Menü</a>
+      <a href="#hesaplayici" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-[#C5A880] font-medium text-sm">Bütçe Hesapla</a>
+      <a href="#nasil-calisir" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-[#C5A880] font-medium text-sm">Hizmet Süreci</a>
+      <a href="#sss" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-[#C5A880] font-medium text-sm">Sıkça Sorulan Sorular</a>
+      <a href="https://wa.me/905385617199" target="_blank" class="block w-full text-center bg-emerald-600 text-white font-bold py-2.5 rounded-xl text-sm">
+        WhatsApp ile İletişime Geç
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#C5A880]/15 blur-[120px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-10 right-10 w-72 h-72 bg-blue-600/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-[#C5A880]/40 shadow-inner mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#C5A880] animate-ping"></span>
+        <span class="text-xs font-bold uppercase tracking-wider text-[#C5A880]">Ofis ve Kliniklere Özel Kurumsal Servis</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.15] max-w-4xl mx-auto">
+        Ekibiniz İçin Her Gün Sıcak, Taze ve <span class="gold-gradient-text">Zamanında Öğle Yemeği</span>
+      </h1>
+
+      <p class="mt-6 text-sm sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        Dışarıdan sipariş arama stresine ve geciken kuryelere son. Her sabah taze pişirilen 4 çeşit dengeli sıcak ev yemeğini, ısı korumalı özel tekil ambalajlarda tam mola saatinizde masanıza ulaştırıyoruz.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#teklif" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#DFCA9B] via-[#C5A880] to-[#9E7D53] text-slate-950 font-extrabold text-sm sm:text-base shadow-xl shadow-[#C5A880]/20 hover:scale-105 active:scale-95 transition-all text-center">
+          Ofisiniz İçin Fiyat Teklifi Alın
+        </a>
+        <a href="#menu" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-white font-bold text-sm sm:text-base border border-slate-700/80 transition-all text-center">
+          Haftalık Örnek Menüyü İnceleyin
+        </a>
+      </div>
+
+      <!-- Güven Rozetleri -->
+      <div class="mt-12 pt-8 border-t border-slate-800/60 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-[#131F35]/70 border border-slate-800">
+          <span class="text-2xl">🍱</span>
+          <div>
+            <div class="text-xs font-bold text-white">4 Çeşit Standart</div>
+            <div class="text-[11px] text-slate-400">Doyurucu & dengeli</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-[#131F35]/70 border border-slate-800">
+          <span class="text-2xl">⏱️</span>
+          <div>
+            <div class="text-xs font-bold text-white">Dakik Masaya Teslimat</div>
+            <div class="text-[11px] text-slate-400">Mola saatine sadık</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-[#131F35]/70 border border-slate-800">
+          <span class="text-2xl">📑</span>
+          <div>
+            <div class="text-xs font-bold text-white">%100 Kurumsal Fatura</div>
+            <div class="text-[11px] text-slate-400">Tam vergi indirimi</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 p-3.5 rounded-xl bg-[#131F35]/70 border border-slate-800">
+          <span class="text-2xl">🛡️</span>
+          <div>
+            <div class="text-xs font-bold text-white">Sızdırmaz Sıcak Ambalaj</div>
+            <div class="text-[11px] text-slate-400">Bölmeli tekil kaplar</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Neden Biz? / Avantajlar Bölümü -->
+  <section id="avantajlar" class="py-20 bg-[#0E172A] border-y border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-[#C5A880] uppercase">Kurumsal Çözüm Ortağınız</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white mt-2">
+          Neden Sıradan Siparişler Yerine Prestige Solutions?
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          Ofis çalışanlarının öğle molasını verimli geçirmesi, iş verimliliğini doğrudan artırır. Biz sadece yemek değil, dakik bir operasyon sunuyoruz.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-[#131F35] border border-slate-800/80 rounded-2xl p-7 relative group hover:border-[#C5A880]/50 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A880]/10 border border-[#C5A880]/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            ⏱️
+          </div>
+          <h3 class="text-lg font-bold font-heading text-white mb-2">Dakik Operasyon, Sıfır Mesai Kaybı</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            "Kurye nerede kaldı?" veya "Sipariş yanlış geldi" stresi yok. Mola saatinizden 15 dakika önce ısı muhafazalı termobox kutuda muhafaza edilmiş tek kullanımlık özenle porsiyonlanmış kaplarla kapınızda hazırız.
+          </p>
+        </div>
+
+        <div class="bg-[#131F35] border border-slate-800/80 rounded-2xl p-7 relative group hover:border-[#C5A880]/50 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A880]/10 border border-[#C5A880]/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            🍲
+          </div>
+          <h3 class="text-lg font-bold font-heading text-white mb-2">Ev Yemeği Hafifliği, Gün Boyu Enerji</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Ağır, aşırı yağlı hazır yiyeceklerin sebep olduğu öğleden sonra rehavetine son. Dengeli protein ve karbonhidrat oranlarıyla özenle hazırlanan taze menüler.
+          </p>
+        </div>
+
+        <div class="bg-[#131F35] border border-slate-800/80 rounded-2xl p-7 relative group hover:border-[#C5A880]/50 transition-all duration-300">
+          <div class="w-12 h-12 rounded-xl bg-[#C5A880]/10 border border-[#C5A880]/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            📑
+          </div>
+          <h3 class="text-lg font-bold font-heading text-white mb-2">Dağınık Fiş Yok, Tek Kurumsal Fatura</h3>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+            Her çalışanın ayrı fiş toplamasıyla veya yemek kartı komisyonlarıyla uğraşmayın. Ay sonunda tek kalem kurumsal fatura ile tam gider indirimi sağlayın.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Haftalık Menü Vitrini -->
+  <section id="menu" class="py-20 bg-[#0A111F]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold tracking-widest text-[#C5A880] uppercase">Zengin & Dengeli Çeşitler</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white mt-1">
+            Örnek Haftalık Menü Planı
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            Her gün 4 Çeşit eksiksiz sıcak servis (Sıcak Ana Yemek, Pilav/Makarna, Çorba, Salata/Yoğurt/Tatlı/İçecek ve Ekmek)
+          </p>
+        </div>
+
+        <!-- Gün Seçici Sekmeler -->
+        <div class="mt-6 md:mt-0 flex gap-1.5 p-1.5 bg-[#131F35] rounded-xl border border-slate-800 overflow-x-auto no-scrollbar" id="menuTabsContainer">
+          <button onclick="setMenuDay('pzt')" id="tab-pzt" class="menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#C5A880] text-slate-950 shadow">Pazartesi</button>
+          <button onclick="setMenuDay('sal')" id="tab-sal" class="menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">Salı</button>
+          <button onclick="setMenuDay('car')" id="tab-car" class="menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">Çarşamba</button>
+          <button onclick="setMenuDay('per')" id="tab-per" class="menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">Perşembe</button>
+          <button onclick="setMenuDay('cum')" id="tab-cum" class="menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white">Cuma</button>
+        </div>
+      </div>
+
+      <!-- Menü İçerik Kartı -->
+      <div id="menuContentCard" class="bg-[#131F35] border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl transition-all duration-300">
+        <!-- Dinamik İçerik JavaScript Tarafından Doldurulur -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bütçe & Kişi Sayısı Hesaplayıcı -->
+  <section id="hesaplayici" class="py-20 bg-gradient-to-b from-[#0E172A] to-[#0A111F] border-t border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold tracking-widest text-[#C5A880] uppercase">Şeffaf Maliyet Planlaması</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white mt-1">
+          Ofisiniz İçin Yaklaşık Bütçeyi Hesaplayın
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">
+          Çalışan sayınızı seçerek aylık yaklaşık maliyetinizi ve tam fatura giderleştirme avantajınızı anında görüntüleyin.
+        </p>
+      </div>
+
+      <div class="bg-[#131F35] border border-[#C5A880]/30 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="personRange" class="text-sm font-bold text-white">Çalışan / Porsiyon Sayısı:</label>
+                <span id="personCountText" class="text-2xl font-black font-heading text-[#C5A880]">10 Kişi</span>
+              </div>
+              <input type="range" id="personRange" min="3" max="50" value="10" step="1" oninput="calculateBudget()" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-[#C5A880]">
+              <div class="flex justify-between text-[11px] text-slate-500 mt-1 font-mono">
+                <span>3 Kişi (Min)</span>
+                <span>25 Kişi</span>
+                <span>50+ Kişi</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Haftalık Hizmet Günü:</label>
+              <div class="grid grid-cols-2 gap-3">
+                <button type="button" onclick="setWorkDays(5)" id="btnDay5" class="py-2.5 rounded-xl border border-[#C5A880] bg-[#C5A880]/15 text-white font-bold text-xs transition-all">
+                  Haftada 5 Gün (Hafta İçi)
+                </button>
+                <button type="button" onclick="setWorkDays(6)" id="btnDay6" class="py-2.5 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-400 font-bold text-xs hover:text-white transition-all">
+                  Haftada 6 Gün (Cumartesi Dahil)
+                </button>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400 space-y-1.5">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Kapalı ekmek, kaşık-çatal seti dahildir.</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Termobox sıcak zincir teslimatı servis bedeline dahildir.</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Kurumsal fatura ile %100 gider yazılabilir.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-gradient-to-br from-[#1C2C4A] to-[#121B2F] p-6 rounded-2xl border border-slate-700/80 text-center flex flex-col justify-between h-full">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-[#C5A880]">Tahmini Aylık Bütçe</span>
+              <div class="mt-2 flex items-baseline justify-center gap-1">
+                <span id="totalMonthlyPrice" class="text-4xl sm:text-5xl font-black font-heading text-white tracking-tight">55.000</span>
+                <span class="text-lg font-bold text-[#C5A880]">TL</span>
+              </div>
+              <span class="text-[11px] text-slate-400 block mt-1">Sabit Porsiyon Fiyatı: <b>300 TL</b> (KDV Dahil)</span>
+            </div>
+
+            <div class="my-6 py-4 border-y border-slate-700/60 text-left space-y-2 text-xs">
+              <div class="flex justify-between text-slate-300">
+                <span>Günlük Toplam Menü:</span>
+                <span id="dailyTotalCount" class="font-bold text-white">10 Menü</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Aylık Toplam Öğün:</span>
+                <span id="monthlyTotalMeals" class="font-bold text-white">220 Öğün</span>
+              </div>
+            </div>
+
+            <a id="calcWhatsAppBtn" href="#" target="_blank" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/50 transition-all hover:scale-105">
+              <span>Bu Bütçeyle Teklif İste</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Nasıl Çalışır? -->
+  <section id="nasil-calisir" class="py-20 bg-[#0A111F]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-[#C5A880] uppercase">Basit & Şeffaf Süreç</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white mt-1">
+          Hizmete Başlamak 3 Basit Adım
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <div class="bg-[#131F35] border border-slate-800 rounded-2xl p-6 text-center relative z-10">
+          <div class="w-12 h-12 rounded-full bg-[#C5A880] text-slate-950 font-black font-heading text-lg mx-auto flex items-center justify-center mb-4 shadow-lg shadow-[#C5A880]/20">
+            1
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Talep ve Menü Seçimi</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Ofis çalışan sayınızı ve teslimat semtinizi belirtin. Ekibinizin zevkine göre haftalık menüyü netleştirelim.
+          </p>
+        </div>
+
+        <div class="bg-[#131F35] border border-slate-800 rounded-2xl p-6 text-center relative z-10">
+          <div class="w-12 h-12 rounded-full bg-[#C5A880] text-slate-950 font-black font-heading text-lg mx-auto flex items-center justify-center mb-4 shadow-lg shadow-[#C5A880]/20">
+            2
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Sıcak & Dakik Servis</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Her gün belirlediğiniz mola saatinde sızdırmaz, kişiye özel ambalajlı sıcak yemekleriniz ofis masanıza teslim edilsin.
+          </p>
+        </div>
+
+        <div class="bg-[#131F35] border border-slate-800 rounded-2xl p-6 text-center relative z-10">
+          <div class="w-12 h-12 rounded-full bg-[#C5A880] text-slate-950 font-black font-heading text-lg mx-auto flex items-center justify-center mb-4 shadow-lg shadow-[#C5A880]/20">
+            3
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Tek Kalem Faturalandırma</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Ay sonunda tüketilen toplam gün üzerinden tek kurumsal e-arşiv fatura düzenlenir, şirket giderinize dahil edilir.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- İletişim & Teklif Formu -->
+  <section id="teklif" class="py-20 bg-[#0E172A] border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-[#131F35] border border-slate-800 rounded-3xl p-6 sm:p-12 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#C5A880]">Hemen İletişime Geçin</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-white mt-1">
+              Ofisiniz İçin Teklif İsteyin
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-400 mt-2">
+              Formu doldurun veya doğrudan WhatsApp üzerinden bize ulaşın; aynı gün içinde menü takvimi ve fiyat teklifimizi iletelim.
+            </p>
+          </div>
+
+          <div class="space-y-4 pt-2 border-t border-slate-800/80 text-xs sm:text-sm text-slate-300">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-base">📍</span>
+              <div>
+                <span class="text-[11px] text-slate-400 block">Hizmet Bölgesi:</span>
+                <span class="font-bold text-white">İstanbul Geneli Ofis ve Klinikler</span>
+              </div>
+            </div>
+
+            <a href="tel:05385617199" class="flex items-center gap-3 group hover:text-[#C5A880] transition-colors">
+              <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-base group-hover:border-[#C5A880]">📞</span>
+              <div>
+                <span class="text-[11px] text-slate-400 block">Müşteri & Bilgi Hattı (Dokun & Ara):</span>
+                <span class="font-bold text-[#C5A880] group-hover:underline">0 538 561 71 99</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/905385617199?text=Merhaba%2C%20Prestige%20Solutions%20kurumsal%20yemek%20hizmetiniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" class="flex items-center gap-3 group hover:text-emerald-400 transition-colors">
+              <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-base group-hover:border-emerald-500">💬</span>
+              <div>
+                <span class="text-[11px] text-slate-400 block">Hızlı WhatsApp (Dokun & Yaz):</span>
+                <span class="font-bold text-emerald-400 group-hover:underline">0 (538) 561 71 99</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-[#0A111F] p-6 sm:p-8 rounded-2xl border border-slate-800">
+          <form id="quoteForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Şirket / Klinik Adı *</label>
+                <input type="text" id="formCompany" required placeholder="Örn: Dent İstanbul Kliniği" class="w-full bg-[#131F35] border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#C5A880]">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Yetkili Adı Soyadı *</label>
+                <input type="text" id="formName" required placeholder="Adınız Soyadınız" class="w-full bg-[#131F35] border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#C5A880]">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Telefon Numarası *</label>
+                <input type="tel" id="formPhone" required placeholder="05XX XXX XX XX" class="w-full bg-[#131F35] border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#C5A880]">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Bulunduğunuz İlçe / Semt *</label>
+                <input type="text" id="formDistrict" required placeholder="Örn: Kadıköy / Şişli" class="w-full bg-[#131F35] border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#C5A880]">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Tahmini Günlük Porsiyon / Kişi Sayısı</label>
+              <input type="number" id="formCount" min="2" placeholder="Örn: 8" class="w-full bg-[#131F35] border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#C5A880]">
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Eklemek İstediğiniz Not (Opsiyonel)</label>
+              <textarea id="formNote" rows="2" placeholder="Özel öğle saati, diyet tercihi veya diğer detaylar..." class="w-full bg-[#131F35] border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-[#C5A880]"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#DFCA9B] via-[#C5A880] to-[#9E7D53] text-slate-950 font-extrabold text-sm uppercase tracking-wider hover:opacity-95 transition-all shadow-lg shadow-[#C5A880]/20 active:scale-95">
+              Teklif Talebini Gönder
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sıkça Sorulan Sorular -->
+  <section id="sss" class="py-20 bg-[#0A111F]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold tracking-widest text-[#C5A880] uppercase">Merak Edilenler</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white mt-1">
+          Sıkça Sorulan Sorular
+        </h2>
+      </div>
+
+      <div class="space-y-3">
+        
+        <div class="bg-[#131F35] border border-slate-800 rounded-xl p-4">
+          <button onclick="toggleFaq(1)" class="w-full flex items-center justify-between text-left font-bold text-sm text-white">
+            <span>Minimum kaç kişilik sipariş verebiliyoruz?</span>
+            <span id="faq-icon-1" class="text-lg text-[#C5A880] transition-transform">+</span>
+          </button>
+          <div id="faq-ans-1" class="hidden text-xs text-slate-400 mt-2.5 leading-relaxed pt-2 border-t border-slate-800">
+            Bölgeye göre değişmekle birlikte genellikle 4-12 kişilik ofis ve kliniklerden itibaren düzenli servis organize edebiliyoruz.
+          </div>
+        </div>
+
+        <div class="bg-[#131F35] border border-slate-800 rounded-xl p-4">
+          <button onclick="toggleFaq(2)" class="w-full flex items-center justify-between text-left font-bold text-sm text-white">
+            <span>Yemekler öğle saatine kadar sıcak kalıyor mu?</span>
+            <span id="faq-icon-2" class="text-lg text-[#C5A880] transition-transform">+</span>
+          </button>
+          <div id="faq-ans-2" class="hidden text-xs text-slate-400 mt-2.5 leading-relaxed pt-2 border-t border-slate-800">
+            Evet. Yemekleriniz özel ısı muhafazalı termobox taşıma kutularında, tam belirlediğiniz mola saatinde ofisinize ulaştırılır.
+          </div>
+        </div>
+
+        <div class="bg-[#131F35] border border-slate-800 rounded-xl p-4">
+          <button onclick="toggleFaq(3)" class="w-full flex items-center justify-between text-left font-bold text-sm text-white">
+            <span>Ödeme ve faturalandırma nasıl yapılıyor?</span>
+            <span id="faq-icon-3" class="text-lg text-[#C5A880] transition-transform">+</span>
+          </button>
+          <div id="faq-ans-3" class="hidden text-xs text-slate-400 mt-2.5 leading-relaxed pt-2 border-t border-slate-800">
+            Hizmet sonunda aylık olarak kurumsal e-arşiv fatura düzenlenir. Şirket banka havalesiyle kolayca ödeme yapabilirsiniz.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sabit WhatsApp İletişim Butonu -->
+  <a href="https://wa.me/905385617199?text=Merhaba%2C%20Prestige%20Solutions%20kurumsal%20yemek%20hakk%C4%B1nda%20teklif%20almak%20istiyorum." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-white p-3.5 rounded-full shadow-2xl shadow-emerald-950/60 flex items-center justify-center transition-all hover:scale-110 active:scale-95" title="WhatsApp ile İletişim">
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-[#070C16] border-t border-slate-900 py-12 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-heading font-extrabold text-white text-base">PRESTIGE SOLUTIONS</span>
+        <span>• Kurumsal Ofis Catering</span>
+      </div>
+      <div>
+        &copy; 2026 Prestige Solutions. Tüm hakları saklıdır.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Özel Bilgilendirme Modalı -->
+  <div id="successModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#131F35] border border-[#C5A880] rounded-2xl max-w-md w-full p-6 text-center space-y-4 shadow-2xl">
+      <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center text-3xl mx-auto">
+        ✓
+      </div>
+      <h3 class="text-xl font-bold font-heading text-white">Talebiniz Alındı!</h3>
+      <p class="text-xs text-slate-300 leading-relaxed">
+        Yetkili ekibimiz bilgilerinizi inceleyip ofisinize özel haftalık menü teklifini en kısa sürede WhatsApp veya telefon üzerinden iletecektir.
+      </p>
+      <button onclick="closeModal()" class="w-full py-2.5 rounded-xl bg-[#C5A880] text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-[#DFCA9B] transition-colors">
+        Tamamdır
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const weeklyMenuData = {
+      pzt: {
+        title: "Pazartesi Menüsü",
+        items: [
+          { name: "Süzme Kırmızı Mercimek Çorbası", type: "Çorba", icon: "🍲" },
+          { name: "Fırın Tavuk Kanat", type: "Ana Yemek", icon: "🥟" },
+          { name: "Pirinç Pilavı", type: "Meze / Salata", icon: "🥗" },
+          { name: "Süzme Yoğurt &  Ekmek", type: "Garnitür & Ekmek", icon: "🥖" }
+        ],
+        desc: "Haftaya enerjik bir başlangıç için fırın tavuk kanat."
+      },
+      sal: {
+        title: "Salı Menüsü",
+        items: [
+          { name: "Geleneksel Ezogelin Çorbası", type: "Çorba", icon: "🍲" },
+          { name: "Misket Köfte", type: "Ana Yemek", icon: "🥘" },
+          { name: "Tereyağlı Burgu Makarna", type: "Yan Yemek", icon: "🍝" },
+          { name: "Mevsim Yeşillikleri & Taze Ekmek", type: "Garnitür & Ekmek", icon: "🥖" }
+        ],
+        desc: "Doyurucu ve lezzetli misket köfte ve taze salata."
+      },
+      car: {
+        title: "Çarşamba Menüsü",
+        items: [
+          { name: "Süzme Mercimek Çorba", type: "Çorba", icon: "🍲" },
+          { name: "Renkli Biberli Fırın Tavuk Sote", type: "Ana Yemek", icon: "🍗" },
+          { name: "Sebzeli Tereyağlı Erişte", type: "Yan Yemek", icon: "🍝" },
+          { name: "Tatlı & Ekmek", type: "Tatlı & Ekmek", icon: "🥣" }
+        ],
+        desc: "Hafta ortasına özel yüksek proteinli, dengeli tavuk sote."
+      },
+      per: {
+        title: "Perşembe Menüsü",
+        items: [
+          { name: "Şehriye Çorba", type: "Çorba", icon: "🍲" },
+          { name: "Karnıyarık", type: "Ana Yemek", icon: "🍆" },
+          { name: "Bulgur Pilavı", type: "Yan Yemek", icon: "🥔" },
+          { name: "Ayran & Ekmek", type: "İçecek & Ekmek", icon: "🍮" }
+        ],
+        desc: "Damak tadımızın olmazsa olmazı karnıyarık."
+      },
+      cum: {
+        title: "Cuma Menüsü",
+        items: [
+          { name: "Ezogelin Çorba", type: "Çorba", icon: "🍲" },
+          { name: "Tavuk Döner", type: "Ana Yemek", icon: "🥩" },
+          { name: "Pirinç Pilavı", type: "Yan Yemek", icon: "🍚" },
+          { name: "Gazlı İçecek & Ekmek", type: "İçecek & Ekmek", icon: "🥛" }
+        ],
+        desc: "Haftanın son gününe özel tavuk döner."
+      }
+    };
+
+    let selectedWorkDays = 5;
+
+    function setMenuDay(dayKey) {
+      const allButtons = document.querySelectorAll('.menu-tab-btn');
+      allButtons.forEach(btn => {
+        btn.className = "menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white";
+      });
+
+      const activeBtn = document.getElementById(`tab-${dayKey}`);
+      if (activeBtn) {
+        activeBtn.className = "menu-tab-btn px-4 py-2 rounded-lg text-xs font-bold transition-all bg-[#C5A880] text-slate-950 shadow";
+      }
+
+      const data = weeklyMenuData[dayKey];
+      const card = document.getElementById('menuContentCard');
+      
+      card.innerHTML = `
+        <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-800 pb-4 mb-6">
+          <div>
+            <span class="text-xs font-bold text-[#C5A880] uppercase tracking-wider">Günlük Menü İçeriği</span>
+            <h3 class="text-xl sm:text-2xl font-black font-heading text-white mt-0.5">${data.title}</h3>
+          </div>
+          <p class="text-xs text-slate-400 mt-2 md:mt-0 max-w-sm">${data.desc}</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          ${data.items.map((item, idx) => `
+            <div class="bg-[#0A111F] p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+              <span class="text-2xl">${item.icon}</span>
+              <div>
+                <span class="text-[10px] font-bold text-[#C5A880] uppercase tracking-wider block">${idx + 1}. Kap • ${item.type}</span>
+                <h4 class="text-xs font-bold text-white mt-1 leading-snug">${item.name}</h4>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function calculateBudget() {
+      const personCount = parseInt(document.getElementById('personRange').value);
+      document.getElementById('personCountText').textContent = `${personCount} Kişi`;
+      
+      const weeksPerMonth = 4.33;
+      const daysPerMonth = Math.round(selectedWorkDays * weeksPerMonth);
+      const totalMeals = personCount * daysPerMonth;
+      const unitPrice = 250;
+      const totalPrice = totalMeals * unitPrice;
+
+      document.getElementById('totalMonthlyPrice').textContent = totalPrice.toLocaleString('tr-TR');
+      document.getElementById('dailyTotalCount').textContent = `${personCount} Menü`;
+      document.getElementById('monthlyTotalMeals').textContent = `${totalMeals} Öğün`;
+
+      const wpMsg = encodeURIComponent(`Merhaba, Prestige Solutions web sitenizdeki hesaplayıcı üzerinden ${personCount} kişilik (${selectedWorkDays} gün/hafta) kurumsal ofis yemek teklifi almak istiyorum.`);
+      document.getElementById('calcWhatsAppBtn').href = `https://wa.me/905385617199?text=${wpMsg}`;
+    }
+
+    function setWorkDays(days) {
+      selectedWorkDays = days;
+      const btn5 = document.getElementById('btnDay5');
+      const btn6 = document.getElementById('btnDay6');
+
+      if (days === 5) {
+        btn5.className = "py-2.5 rounded-xl border border-[#C5A880] bg-[#C5A880]/15 text-white font-bold text-xs transition-all";
+        btn6.className = "py-2.5 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-400 font-bold text-xs hover:text-white transition-all";
+      } else {
+        btn6.className = "py-2.5 rounded-xl border border-[#C5A880] bg-[#C5A880]/15 text-white font-bold text-xs transition-all";
+        btn5.className = "py-2.5 rounded-xl border border-slate-800 bg-slate-900/60 text-slate-400 font-bold text-xs hover:text-white transition-all";
+      }
+      calculateBudget();
+    }
+
+    function toggleFaq(num) {
+      const ans = document.getElementById(`faq-ans-${num}`);
+      const icon = document.getElementById(`faq-icon-${num}`);
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        ans.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const company = document.getElementById('formCompany').value.trim();
+      const name = document.getElementById('formName').value.trim();
+      const phone = document.getElementById('formPhone').value.trim();
+      const district = document.getElementById('formDistrict').value.trim();
+      const count = document.getElementById('formCount').value.trim() || 'Belirtilmedi';
+      const note = document.getElementById('formNote').value.trim() || 'Yok';
+
+      // WhatsApp için düzenli hazır mesaj metni
+      const message = `📋 *Yeni Kurumsal Yemek Teklifi Talebi*\n\n` +
+                      `🏢 *Firma/Klinik:* ${company}\n` +
+                      `👤 *Yetkili:* ${name}\n` +
+                      `📞 *Telefon:* ${phone}\n` +
+                      `📍 *Semt/Bölge:* ${district}\n` +
+                      `🍽️ *Günlük Porsiyon:* ${count} Kişilik\n` +
+                      `📝 *Not:* ${note}\n\n` +
+                      `_Prestige Solutions web sitesi üzerinden gönderildi._`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/905385617199?text=${encodedMessage}`;
+
+      // Onay modalını göster ve 1 saniye sonra WhatsApp sohbetini aç
+      document.getElementById('successModal').classList.remove('hidden');
+      
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 700);
+
+      document.getElementById('quoteForm').reset();
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').classList.add('hidden');
+    }
+
+    window.onload = function() {
+      setMenuDay('pzt');
+      calculateBudget();
+    };
+  </script>
+</body>
+</html>
